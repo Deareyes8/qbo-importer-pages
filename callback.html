@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Connecting to QBO Sales Receipt Importer...</title>
+</head>
+<body>
+  <p>Connecting, please wait...</p>
+  <script>
+    // Forward whatever QuickBooks sent back (code, realmId, state) straight
+    // to the local app running on this same computer.
+    window.location.href = 'http://localhost:3000/callback' + window.location.search;
+  </script>
+</body>
+</html>
